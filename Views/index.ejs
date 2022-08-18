@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head') %> 
+<body>
+    <form action="/" method="post">
+        <input name="name" id="name" type="text" placeholder="Enter Your Name"/>
+        <input name="age" id="age" type="text" placeholder="Enter Your Age"/>
+        <input name="salary" id="salary" type="text" placeholder="Enter Your Salary"/>
+        <button class="btn">Add Post</button>
+    </form>
+    <div class="container">
+        <% arrArticles.map((item)=>{%>
+            <article class="todo">
+                <p class="title"><%=item.name%> </p>
+                <div class="parent">
+                    <p class="summry"><%=item.age%> </p>
+                    <p><a href="/article-details/<%=item._id %>">Show More</a></p>
+                </div>
+            </article>
+        <% }) %>
+    </div>
+</body>
+</html>

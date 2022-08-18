@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.todo,.article {
+    width: 30%;
+    margin: 4rem 6.5rem 0;
+    border-radius: 10px;
+    border: 2px solid gray;
+    box-shadow: 1px 1px 1px 0 0 1px 1;
+    min-height: 150px;
+    padding: 0 1rem;
+    transition: .05s ease-in-out;
+}
+.article {
+    width: 80%;
+}
+.todo:hover {
+    border: 2px solid red;
+    border-left: 10px solid red;
+}
+.parent {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+input {
+    display: block;
+    width:60%;
+    margin: 1.5rem auto;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 24px;
+}
+.btn {
+    display: block;
+    width: 20%;
+    background-color: rgb(219, 63, 60);
+    margin: 1rem auto;
+    color: white;
+    height: fit-content;
+    line-height: 3;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(184, 52, 50);
+}
